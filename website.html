@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            background-color: rgb(36, 16, 30);
+            color: rgb(241, 129, 241);
+
+        .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            }
+        }
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 400px;
+            padding: 20px;
+            
+            
+        }
+        .carousel{
+            width: 80%;
+            height: 80%;
+        }
+        .carousel-item img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;/* ensure the Image cover the continer without 
+            strectehing*/
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: wavy;
+            color: rgb(211, 23, 218);
+        }
+        .yt {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .video-container {
+            position: relative;
+            width: 30%;
+            height: 200px;
+            
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: rgb(222, 144, 233);
+            color: rgb(19, 12, 12);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:rgb(153, 88, 155);
+        }
+        footer {
+            width: 100%;
+            height: 40px;
+            background-color: #db8ad0;
+            color: rgb(24, 19, 19);
+            text-align: center;
+            padding: 10px ;
+            margin-bottom: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2020/01/03/1912806-1020004355.jpg?itok=bKZG3fMh
+                        " 
+                        alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://people.com/thmb/41Q95G2vD8Y_rx5GJV1DKcRrJT4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(982x461:984x463)/Adriana-Lima-Victorias-Secrets-Fashion-Show-101524-tout-46e4701e52824b659eb313dae696574f.jpg
+                        
+                        "
+                         alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://arabiandiaries.com/wp-content/uploads/2024/07/yasmin-wijnaldum.jpg
+                        
+                        " alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>
+            Fashion Life Style</h1>
+        <div class="yt">
+            <div class="video-container">
+                <iframe width="560" height="200"
+                 src="https://www.youtube.com/embed/IfWYDcVfBVo?si=hzGVrLW9j759cyx1
+                " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button>Watch now</button>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="200"
+                 src="https://www.youtube.com/embed/kYUAmA1FR3k?si=6ALIgZT0W0blYFSB
+                " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button>Watch now</button>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="200"
+                 src="https://www.youtube.com/embed/k42vhOWQk-Y?si=TFgCJP_YznOUYgX6"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </iframe>
+                <button>Watch now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Fashion show | All Rights Reserved
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
